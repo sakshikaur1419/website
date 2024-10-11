@@ -4,13 +4,18 @@
 	box-sizing: border-box;
 
 }
-
-header{
-	width: 100%;
-	height: 100vh;
+body{
+	overflow-x:hidden;
 	background-image: url('ladakh.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+header{
+	width: 100%;
+	height: 100vh;
 	color: white;
 
 
