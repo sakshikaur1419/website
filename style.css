@@ -1,0 +1,143 @@
+*{
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url('ladakh.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+
+
+}
+
+nav {
+	width: 100%;
+	height: 15vh;
+	padding: 5%;
+	background: rgba(0, 0, 0,0.2);
+	color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2%;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 2px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+   
+}
+nav.logo{
+	width: 25%;
+	text-align: center;
+	/*background:red;*/
+
+}
+
+nav.Menu{
+	width: 40%;
+	 display: flex;
+	 justify-content: space-bet;
+}
+
+nav.Menu a{
+	width: 25%;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+nav.Menu a:first-child {
+	color: #00b8;
+}
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	 text-align: center;
+	 color: white;
+}
+section{
+       margin-bottom: 20px;
+}
+section h3{
+	font-size: 35px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 2px black;
+}
+section h1{
+        margin: 30px 0 20px 0;
+        font-size: 55px;
+        font-weight: 700;
+        text-shadow: 2px 1px 5px black;
+        text-transform: uppercase;
+}
+section p{
+	font-size:25px ;
+	word-spacing:2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ea;
+}
+section .btnone{
+	/*background: #00b894;*/
+	background:#fff;
+	color: #000;
+}
+.btnone:hover{
+	background: #00b894;
+	color: white;
+}
+section .btntwo{
+	/*background: #fff;*/
+	background: #00b894;
+	color: black;
+}
+.btntwo:hover{
+	background: #fff;
+	color: black;
+}
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #00b894;
+}
+
+@keyframes changetext{
+	0%{content: "ladakh";}
+	20%{content: "delhi";}
+	35%{content: "shimla";}
+	60%{content: "darjeeling";}
+	80%{content: "manali";}
+	100%{content: "jammu and Kashmir";}
+	
+}
